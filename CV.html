@@ -10,7 +10,18 @@
     <h1>Mon CV</h1>
     <br><br>
     <div class="presentation">
-      <img id="maPhoto" src="Images\silhouette.jpg" alt="Ma photo">
+      <!--<img id="maPhoto" src="Images\silhouette.jpg" alt="Ma photo">-->
+      <div id="lecteur_video">
+        <video id="video">
+          <source src="Videos\DJI RYZE INTEL.mp4" type="video/mp4">
+        </video>
+        <div class="input_control">
+          <input type="image" id="playpause" src="Images\play.png" alt="play_button">
+          <input type="image" id="stop" src="Images\stop.png" alt="stop_button">
+          <input type="image" id="fr" src="Images\fr.jpg" alt="french_button">
+          <input type="image" id="en" src="Images\en.jpg" alt="english_button">
+        </div>
+      </div>
       <div class="icones">
         <h4><img  src="Images\silhouette.jpg" alt="Ma photo">Nom : ZIVKOVIC Nikola<br>
           <img  src="Images\silhouette.jpg" alt="Ma photo">Mail : nikola.zivkovic300@gmail.com<br>
@@ -138,5 +149,6 @@
       <button type="button" id="dark_light">Mode sombre</button>
     </footer>
     <script src="JS\dark_light.js"></script>
+    <script src="JS\video.js"></script>
   </body>
 </html>

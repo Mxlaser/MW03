@@ -112,6 +112,15 @@ section img#imgdronetello {
     }
 }
 
+div.videos {
+  display: inline-flex;
+}
+
+video {
+  width: 50%;
+  margin: 5px;
+}
+
 /*---Gestion colonnes images et texte---*/
 section div.deux_colonnes {
     display: grid;
