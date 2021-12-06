@@ -76,6 +76,7 @@ div.icones img {
   float: left;
   height: 15px;
   width: 15px;
+  margin-right: 5px;
 }
 
 div.presentation p {
@@ -84,13 +85,15 @@ div.presentation p {
   margin-left: 25px;
 }
 
-#video {
-  width: 100%;
-}
-
 #lecteur_video {
   width: 100px;
   border: 1px solid black;
+  margin: 20px;
+  float: right;
+}
+
+#video {
+  width: 100%;
 }
 
 /*---Tableaux---*/
