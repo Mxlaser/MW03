@@ -33,7 +33,7 @@ stop.addEventListener("click", Stop);
 function Stop()
 {
   video.pause();
-  video.currentTime=0;
+  video.currentTime = 0;
   playpause.src = "Images/play.png";
 }
 //Fin deuxième fonction---------------------------------------------------------
@@ -67,3 +67,35 @@ function En()
 }
 
 //Fin quatrième fonction--------------------------------------------------------
+
+
+
+setInterval(function temps()
+{
+  if(video.curentTime > 0)
+  {
+    document.getElementById("maPresentation").classList.remove("surbrillanceOff");
+    document.getElementById("maPresentation").classList.add("surbrillanceOn");
+  }
+  else if(video.currentTime >= 21)
+  {
+    document.getElementById("maPresentation").classList.remove("surbrillanceOn");
+    document.getElementById("maPresentation").classList.add("surbrillanceOff");
+    document.getElementById("textePresentation").classList.remove("surbrillanceOff");
+    document.getElementById("textePresentation").classList.add("surbrillanceOn");
+  }
+  else if(video.currentTime >= 33)
+  {
+    document.getElementById("textePresentation").classList.remove("surbrillanceOn");
+    document.getElementById("textePresentation").classList.add("surbrillanceOff");
+    document.getElementById("competences").classList.remove("contourOff");
+    document.getElementById("competences").classList.add("contourOn");
+  }
+  else if (video.currentTime >= 36)
+  {
+    document.getElementById("competences").classList.remove("contourOn");
+    document.getElementById("competences").classList.add("contourOff");
+    document.getElementById("formations").classList.remove("contourOff");
+    document.getElementById("formations").classList.add("contourOn");
+  }
+},1000)
