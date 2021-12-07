@@ -70,24 +70,25 @@ h2 {
 /*---Classes surbrillance et encadrement---*/
 
 .surbrillanceOff{
-  background-color: inherit;
+  background-color: var(--sa-bg-color);
 }
 
 .surbrillanceOn{
-  background-color: yellow;
+  background-color: #2874a6;
 }
 
 .contourOff {
-
+  border: 5px solid var(--sa-bg-color);
+  border-radius: 20px;
 }
 
 .contourOn {
-  border: 10px solid #2874a6;
+  border: 5px solid #2874a6;
   border-radius: 20px;
 }
 
 div.presentation h4 {
-  color: var(--sa-title-color);
+  color: var(--sa-text-color);
   margin-left: 20px;
 }
 
@@ -108,7 +109,6 @@ div.presentation p {
   width: 100px;
   border: 1px solid black;
   margin: 20px;
-  float: right;
 }
 
 #video {

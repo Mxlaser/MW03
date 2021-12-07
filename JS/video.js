@@ -68,34 +68,57 @@ function En()
 
 //Fin quatrième fonction--------------------------------------------------------
 
-
+//Début cinquième fonction------------------------------------------------------
 
 setInterval(function temps()
 {
-  if(video.curentTime > 0)
+  //---Ma présentation
+  if(video.currentTime > 1)
   {
     document.getElementById("maPresentation").classList.remove("surbrillanceOff");
     document.getElementById("maPresentation").classList.add("surbrillanceOn");
   }
-  else if(video.currentTime >= 21)
+  if(video.currentTime >=20)
   {
     document.getElementById("maPresentation").classList.remove("surbrillanceOn");
     document.getElementById("maPresentation").classList.add("surbrillanceOff");
+  }
+
+  //---Présentation stage
+  if(video.currentTime > 21)
+  {
     document.getElementById("textePresentation").classList.remove("surbrillanceOff");
     document.getElementById("textePresentation").classList.add("surbrillanceOn");
   }
-  else if(video.currentTime >= 33)
+  if(video.currentTime >= 33)
   {
     document.getElementById("textePresentation").classList.remove("surbrillanceOn");
     document.getElementById("textePresentation").classList.add("surbrillanceOff");
+  }
+
+  //---Tableau compétences
+  if(video.currentTime > 33)
+  {
     document.getElementById("competences").classList.remove("contourOff");
     document.getElementById("competences").classList.add("contourOn");
   }
-  else if (video.currentTime >= 36)
+  if(video.currentTime >= 35)
   {
     document.getElementById("competences").classList.remove("contourOn");
     document.getElementById("competences").classList.add("contourOff");
+  }
+
+  //---Tableaux formations et exp pro
+  if(video.currentTime > 36)
+  {
     document.getElementById("formations").classList.remove("contourOff");
     document.getElementById("formations").classList.add("contourOn");
   }
+  if(video.currentTime  >= 40)
+  {
+    document.getElementById("formations").classList.remove("contourOn");
+    document.getElementById("formations").classList.add("contourOff");
+  }
 },1000)
+
+//Fin cinquième fonction------------------------------------------------------
