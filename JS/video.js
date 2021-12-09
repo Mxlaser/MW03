@@ -73,51 +73,57 @@ function En()
 setInterval(function temps()
 {
   //---Ma présentation
-  if(video.currentTime > 1)
+  if(video.currentTime > 0)
   {
     document.getElementById("maPresentation").classList.remove("surbrillanceOff");
     document.getElementById("maPresentation").classList.add("surbrillanceOn");
   }
-  if(video.currentTime >=20)
+  if(video.currentTime >=19)
   {
     document.getElementById("maPresentation").classList.remove("surbrillanceOn");
     document.getElementById("maPresentation").classList.add("surbrillanceOff");
   }
 
   //---Présentation stage
-  if(video.currentTime > 21)
+  if(video.currentTime > 19)
   {
     document.getElementById("textePresentation").classList.remove("surbrillanceOff");
     document.getElementById("textePresentation").classList.add("surbrillanceOn");
   }
-  if(video.currentTime >= 33)
+  if(video.currentTime >= 31)
   {
     document.getElementById("textePresentation").classList.remove("surbrillanceOn");
     document.getElementById("textePresentation").classList.add("surbrillanceOff");
   }
 
   //---Tableau compétences
-  if(video.currentTime > 33)
+  if(video.currentTime > 32)
   {
     document.getElementById("competences").classList.remove("contourOff");
     document.getElementById("competences").classList.add("contourOn");
   }
-  if(video.currentTime >= 35)
+  if(video.currentTime >= 34)
   {
     document.getElementById("competences").classList.remove("contourOn");
     document.getElementById("competences").classList.add("contourOff");
   }
 
   //---Tableaux formations et exp pro
-  if(video.currentTime > 36)
+  if(video.currentTime > 34)
   {
     document.getElementById("formations").classList.remove("contourOff");
     document.getElementById("formations").classList.add("contourOn");
   }
-  if(video.currentTime  >= 40)
+  if(video.currentTime  >= 39)
   {
     document.getElementById("formations").classList.remove("contourOn");
     document.getElementById("formations").classList.add("contourOff");
+  }
+
+  //---Fin de video
+  if(video.ended)
+  {
+    playpause.src = "Images/play.png";
   }
 },1000)
 

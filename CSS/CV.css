@@ -146,6 +146,11 @@ td.date {
   text-align: center;
 }
 
+#table3 {
+  width: auto;
+  margin: 20px;
+  text-align: center;
+}
 
 /*---Couleurs des langages HTML---*/
 #texte_blanc{
@@ -245,6 +250,7 @@ footer {
 
 /*Zone réservée pour les écrans inférieurs à 800px de large*/
  @media (max-width: 800px) {
+
    div.grille {
      display: grid;
      grid-template-columns: 100%;
